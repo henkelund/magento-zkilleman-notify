@@ -33,5 +33,10 @@
                 <enabled>1</enabled>
             </general>
         </notify>
+        <dev>
+            <template>
+                <allow_symlink>1</allow_symlink>
+            </template>
+        </dev>
     </default>
 </config>
