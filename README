@@ -1,1 +1,4 @@
 Credits to Tango! (http://tango.freedesktop.org/) for the cute smiley icons
+
+For deploy using modman you need to allow symlinks in 
+System->Configuration->Developer->Template Settings (Magento >= 1.5.1.0)
