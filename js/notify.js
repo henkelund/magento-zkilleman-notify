@@ -41,6 +41,7 @@ ZkillemanNotify.prototype = {
         this._popped = new Array();
         this._counter = 0;
         this._config = config;
+        this._config.closeText = config.closeText || 'Close';
     },
     addMessage: function(message) {
         if (message && message.text) {
@@ -81,7 +82,9 @@ ZkillemanNotify.prototype = {
             }
         });
 
-        var closeButton = new Element('img', {src: this._config.closeButton});
+        var closeButton = new Element('a', {title: this._config.closeText})
+            .addClassName('close-notice')
+            .insert(new Element('span').insert(this._config.closeText));
         message.elem.insert(closeButton);
         Event.observe(closeButton, 'click', function(event) {
             new Effect.Opacity(message.elem, {

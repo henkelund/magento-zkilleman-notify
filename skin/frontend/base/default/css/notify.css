@@ -73,13 +73,17 @@
 .zkilleman-notifications li.error {
     background-image: url('../images/notify/error.png');
 }
-.zkilleman-notifications li img {
+.zkilleman-notifications li a.close-notice,
+.zkilleman-notifications li a.close-notice span {
     display: none;
 }
-.zkilleman-notifications li.hover img {
-    cursor: pointer;
+.zkilleman-notifications li.hover a.close-notice {
+    display: block;
     position: absolute;
     top: 5px;
     left: 5px;
-    display: block;
+    width: 22px;
+    height: 22px;
+    background: url('../images/notify/close.png') top left no-repeat;
+    cursor: pointer;
 }
