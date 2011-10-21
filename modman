@@ -1,0 +1,7 @@
+app/code/community/Zkilleman/Notify                 app/code/community/Zkilleman/Notify
+app/etc/modules/Zkilleman_Notify.xml                app/etc/modules/Zkilleman_Notify.xml
+app/design/frontend/base/default/layout/notify.xml  app/design/frontend/base/default/layout/notify.xml
+app/design/frontend/base/default/template/notify    app/design/frontend/base/default/template/notify
+js/notify.js                                        js/notify.js
+skin/frontend/base/default/css/notify.css           skin/frontend/base/default/css/notify.css
+skin/frontend/base/default/images/notify            skin/frontend/base/default/images/notify

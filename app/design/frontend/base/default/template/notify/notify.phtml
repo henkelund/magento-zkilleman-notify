@@ -1,0 +1,10 @@
+<ul id="zkilleman-notifications" class="zkilleman-notifications"></ul>
+<script type="text/javascript">
+//<![CDATA[
+    var _zkillemanNotify = new ZkillemanNotify({
+        baseUrl: '<?php echo Mage::getBaseUrl(); ?>',
+        listElem: $('zkilleman-notifications'),
+        closeButton: '<?php echo $this->getSkinUrl('images/notify/close.png'); ?>'
+    });
+//]]>
+</script>

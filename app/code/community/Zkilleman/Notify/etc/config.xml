@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Zkilleman_Notify>
+            <version>0.1.0</version>
+        </Zkilleman_Notify>
+    </modules>
+
+    <frontend>
+        <layout>
+            <updates>
+                <notify>
+                    <file>notify.xml</file>
+                </notify>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+        <blocks>
+            <notify><class>Zkilleman_Notify_Block</class></notify>
+            <core>
+                <rewrite>
+                    <messages>Zkilleman_Notify_Block_Messages</messages>
+                </rewrite>
+            </core>
+        </blocks>
+    </global>
+
+    <default>
+        <notify>
+            <general>
+                <enabled>1</enabled>
+            </general>
+        </notify>
+    </default>
+</config>
