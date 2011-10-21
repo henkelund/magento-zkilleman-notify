@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<!--
+<?php
 /**
  * Zkilleman_Notify
  *
@@ -29,48 +28,15 @@
  * @license   http://www.gnu.org/licenses/lgpl.html GNU LGPL
  * @link      https://github.com/henkelund/magento-zkilleman-notify
  */
--->
-<config>
-    <modules>
-        <Zkilleman_Notify>
-            <version>0.1.0</version>
-        </Zkilleman_Notify>
-    </modules>
 
-    <frontend>
-        <layout>
-            <updates>
-                <notify>
-                    <file>notify.xml</file>
-                </notify>
-            </updates>
-        </layout>
-    </frontend>
+/**
+ * Zkilleman_Notify_Helper_Data
+ *
+ * @category   Zkilleman
+ * @package    Zkilleman_Notify
+ * @author     Henrik Hedelund <henke.hedelund@gmail.com>
+ */
+class Zkilleman_Notify_Helper_Data extends Mage_Core_Helper_Abstract
+{
 
-    <global>
-        <blocks>
-            <notify><class>Zkilleman_Notify_Block</class></notify>
-            <core>
-                <rewrite>
-                    <messages>Zkilleman_Notify_Block_Messages</messages>
-                </rewrite>
-            </core>
-        </blocks>
-        <helpers>
-            <notify><class>Zkilleman_Notify_Helper</class></notify>
-        </helpers>
-    </global>
-
-    <default>
-        <notify>
-            <general>
-                <replace_standard>1</replace_standard>
-            </general>
-        </notify>
-        <dev>
-            <template>
-                <allow_symlink>1</allow_symlink>
-            </template>
-        </dev>
-    </default>
-</config>
+}

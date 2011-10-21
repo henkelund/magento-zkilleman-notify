@@ -39,6 +39,8 @@
 class Zkilleman_Notify_Block_Messages extends Mage_Core_Block_Messages
 {
 
+    const CONFIG_REPLACE_STANDARD = 'notify/general/replace_standard';
+
     /**
      *
      * @var string Message block template
@@ -81,7 +83,7 @@ class Zkilleman_Notify_Block_Messages extends Mage_Core_Block_Messages
      */
     public function getGroupedHtml()
     {
-        if (!Mage::getStoreConfig('notify/general/enabled') ||
+        if (!Mage::getStoreConfig(self::CONFIG_REPLACE_STANDARD) ||
                 Mage::app()->getStore()->isAdmin()) {
             return parent::getGroupedHtml();
         }

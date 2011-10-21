@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Zkilleman_Notify
+ *
+ * Copyright (C) 2011 Henrik Hedelund (henke.hedelund@gmail.com)
+ *
+ * This file is part of Zkilleman_Notify.
+ *
+ * Zkilleman_Notify is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Zkilleman_Notify is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Zkilleman_Notify.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * PHP Version 5.1
+ *
+ * @category  Zkilleman
+ * @package   Zkilleman_Notify
+ * @author    Henrik Hedelund <henke.hedelund@gmail.com>
+ * @copyright 2011 Henrik Hedelund (henke.hedelund@gmail.com)
+ * @license   http://www.gnu.org/licenses/lgpl.html GNU LGPL
+ * @link      https://github.com/henkelund/magento-zkilleman-notify
+ */
+-->
+<config>
+    <sections>
+        <notify translate="label" module="notify">
+            <label>Zkilleman Notify</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="notify">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <replace_standard translate="label comment" module="notify">
+                            <label>Replace Standard</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment><![CDATA[Wheter to use Zkilleman Notify for display of standard messages in frontend.]]></comment>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </replace_standard>
+                    </fields>
+                </general>
+            </groups>
+        </notify>
+    </sections>
+</config>
