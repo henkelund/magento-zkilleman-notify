@@ -83,7 +83,8 @@ class Zkilleman_Notify_Block_Messages extends Mage_Core_Block_Messages
      */
     public function getGroupedHtml()
     {
-        if (!Mage::getStoreConfig(self::CONFIG_REPLACE_STANDARD) ||
+        if (!Mage::isInstalled()                                     ||
+                !Mage::getStoreConfig(self::CONFIG_REPLACE_STANDARD) ||
                 Mage::app()->getStore()->isAdmin()) {
             return parent::getGroupedHtml();
         }
